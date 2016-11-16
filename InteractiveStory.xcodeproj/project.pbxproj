@@ -12,6 +12,7 @@
 		3CC673EB1DDD0F7C009E1922 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC673E91DDD0F7C009E1922 /* Main.storyboard */; };
 		3CC673ED1DDD0F7C009E1922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC673EC1DDD0F7C009E1922 /* Assets.xcassets */; };
 		3CC673F01DDD0F7C009E1922 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CC673EE1DDD0F7C009E1922 /* LaunchScreen.storyboard */; };
+		3CC673F81DDD1667009E1922 /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC673F71DDD1667009E1922 /* InteractiveStory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3CC673EC1DDD0F7C009E1922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CC673EF1DDD0F7C009E1922 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CC673F11DDD0F7C009E1922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CC673F71DDD1667009E1922 /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3CC673E51DDD0F7C009E1922 /* AppDelegate.swift */,
 				3CC673E71DDD0F7C009E1922 /* ViewController.swift */,
+				3CC673F71DDD1667009E1922 /* InteractiveStory.swift */,
 				3CC673E91DDD0F7C009E1922 /* Main.storyboard */,
 				3CC673EC1DDD0F7C009E1922 /* Assets.xcassets */,
 				3CC673EE1DDD0F7C009E1922 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC673F81DDD1667009E1922 /* InteractiveStory.swift in Sources */,
 				3CC673E81DDD0F7C009E1922 /* ViewController.swift in Sources */,
 				3CC673E61DDD0F7C009E1922 /* AppDelegate.swift in Sources */,
 			);
