@@ -22,7 +22,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iv-hg-12w">
                                 <state key="normal" title="Start Adventure"/>
                                 <connections>
-                                    <segue destination="DId-dQ-ar4" kind="show" id="gWL-nU-nXu"/>
+                                    <segue destination="DId-dQ-ar4" kind="show" identifier="startAdventure" id="gWL-nU-nXu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="2000.8" y="-313.49325337331339"/>
         </scene>
-        <!--View Controller-->
+        <!--Page Controller-->
         <scene sceneID="gJi-dJ-sAf">
             <objects>
-                <viewController id="DId-dQ-ar4" sceneMemberID="viewController">
+                <viewController id="DId-dQ-ar4" customClass="PageController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O0x-VU-1Wr"/>
                         <viewControllerLayoutGuide type="bottom" id="cRR-hc-ptj"/>
