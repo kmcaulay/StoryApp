@@ -50,6 +50,7 @@ class PageController: UIViewController {
             }
             if let secondChoice = page.secondChoice {
                 secondChoiceButton.setTitle(secondChoice.title, for: .normal)
+                secondChoiceButton.addTarget(self, action: #selector(PageController.loadSecondChoice), for: .touchUpInside)
             }
         }
     }
