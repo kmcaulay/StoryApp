@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,25 +19,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beginning" translatesAutoresizingMaskIntoConstraints="NO" id="wjs-uN-klC"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iv-hg-12w">
                                 <state key="normal" title="Start Adventure"/>
                                 <connections>
                                     <segue destination="DId-dQ-ar4" kind="show" identifier="startAdventure" id="gWL-nU-nXu"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMo-ns-Rf0">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RSi-ky-Zaz"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Beginning" translatesAutoresizingMaskIntoConstraints="NO" id="wjs-uN-klC">
+                                <frame key="frameInset" minX="7" minY="64" width="375" height="603"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wjs-uN-klC" secondAttribute="bottom" id="0gi-ai-ddz"/>
                             <constraint firstAttribute="trailing" secondItem="wjs-uN-klC" secondAttribute="trailing" id="3YK-da-jTQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fMo-ns-Rf0" secondAttribute="trailing" constant="24" id="5bT-K1-BbG"/>
                             <constraint firstItem="6iv-hg-12w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="815-fF-kJR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6iv-hg-12w" secondAttribute="bottom" constant="48" id="Dcx-rk-7pU"/>
                             <constraint firstItem="wjs-uN-klC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fuu-DX-ABu"/>
+                            <constraint firstItem="fMo-ns-Rf0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="gYO-Ou-Iab"/>
+                            <constraint firstItem="fMo-ns-Rf0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jUh-bb-qrE"/>
+                            <constraint firstItem="6iv-hg-12w" firstAttribute="top" secondItem="fMo-ns-Rf0" secondAttribute="bottom" constant="40" id="jzd-LB-m2T"/>
                             <constraint firstItem="wjs-uN-klC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pD7-WH-lHf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5su-8r-afm"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="fMo-ns-Rf0" id="j8g-eT-KTl"/>
+                        <outlet property="textFieldBottomConstraint" destination="jzd-LB-m2T" id="1Dy-xN-G1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

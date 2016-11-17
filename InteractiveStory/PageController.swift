@@ -110,7 +110,7 @@ class PageController: UIViewController {
         }
     }
     func playAgain() {
-        navigationController?.popToRootViewController(animated: true)
+        _ = navigationController?.popToRootViewController(animated: true)
     }
     
     
